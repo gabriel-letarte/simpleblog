@@ -1,0 +1,16 @@
+<ul>
+  <% @article.each do |article| %>
+      <li>
+        <h2><%= article.title %>
+        <%= link_to '&times;'.html_safe, article_path(article),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %>
+              </h2>
+        <p><%= article.text %></p>
+        <%= link_to 'show', article_path(article), class:'center' %>
+      </li>
+  <% end %>
+</ul>
+
+
+    

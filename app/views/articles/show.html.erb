@@ -1,0 +1,19 @@
+<ul>
+      <li>
+        <h2>
+          <%= @article.title %>
+          <%= link_to '&times;'.html_safe, article_path(@article),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %>
+        </h2>
+        <p><%= @article.text %></p>
+
+        
+          <%= link_to 'edit', edit_article_path(@article), class: "center" %>
+
+      </li>
+      <%= render @article.comments %>
+</ul>
+
+<h1>Add a comment</h1>
+<%= render 'comments/form' %>

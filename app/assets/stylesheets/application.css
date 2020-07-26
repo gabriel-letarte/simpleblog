@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: black;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*****************************************************************/
+
+header {
+    display: flex;
+    padding: .5rem;
+    text-align: center;
+    text-transform: capitalize;
+    background-color: whitesmoke;
+    justify-content: space-between;
+    box-shadow: 0px 0px 5px lightgray;
+}
+
+header a {
+    padding: 1rem;
+    border-radius: 6px;
+    border: 1px solid lightgray;
+    background-color: rgb(235, 235, 235);
+}
+
+header a:hover {
+    background-color: lightgray;
+}
+
+/*****************************************************************/
+
+main {
+    width: 800px;
+    display: block;
+    padding: 0.5rem 0;
+    margin: 1rem auto;
+}
+
+h1 {
+    padding: 0.5rem;
+    text-align: center;
+}
+
+a:hover {
+    background-color: lightgray;
+}
+
+ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 a, h3 a {
+    padding: 0 0.5rem;
+    border-radius: 6px;
+}
+
+ul li {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 6px;
+    margin: 0.4rem;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 5px lightgray;
+
+}
+
+h2, h3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul p {
+    padding: 0.5rem;
+}
+
+label {
+    font-weight: bold;
+    padding: .1rem;
+}
+
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 0 0 20px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+}
+
+.center {
+    width: fit-content;
+    margin: auto;
+    text-decoration: underline;
+}
+
+.space {
+    display: block;
+    width: 100%;
+    padding: .5rem;
+}
